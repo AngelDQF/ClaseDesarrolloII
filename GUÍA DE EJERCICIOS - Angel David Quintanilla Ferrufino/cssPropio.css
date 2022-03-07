@@ -1,0 +1,75 @@
+* {
+    font-family: 'Times New Roman', Times, serif;
+    list-style: none;
+    text-decoration: none;
+}
+.parrafoJustificado{
+    text-align: justify;
+}
+.navPropio {
+    margin: 0;
+    font-size: 25px;
+
+}
+
+.navPropio a {
+    color: #fff;
+}
+
+.navPropio a:hover {
+    background-color: brown;
+    padding:5px 10px;
+}
+
+.imgBordeExterior {
+    background: linear-gradient(to left, var(--verdeLima), var(--verdeVivo), var(--verdePrincipal));
+    border-radius: 100%;
+    margin: 0px;
+    padding: 0;
+    color: #fff;
+    text-align: center;
+}
+
+.imgBordeExterior2 {
+    background: linear-gradient(to left, var(--verdeLima), var(--verdeVivo), var(--verdePrincipal));
+    border-radius: 100%;
+    padding: 10px;
+    color: #fff;
+
+}
+
+.imgBordeExterior2:hover {
+    transform: translateY(-20px);
+    background-image: url("../img/estrellas.jpg");
+    background-size: cover;
+    padding: 40px;
+}
+.classPadding {
+    padding:4px 10px;
+}
+.classPadding2{
+    padding-right: 10px;
+}
+.imgBordeInterior {
+    width: 100%;
+    height: auto;
+}
+
+.imgContainer {
+    width: 96%;
+    max-width: 960px;
+    margin: 0 auto;
+}
+body {
+    background-image: url("img/background.jpg");
+    resize:cover;
+}
+/*Configuracion Footer*/
+
+
+.copyright {
+    margin-top: 15px;
+    text-align: center;
+    font-size: 1rem;
+    color: #fff;
+}
