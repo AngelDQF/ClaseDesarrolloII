@@ -5,7 +5,7 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Clase 21 Feb | Ejemplo 1</title>
+    <title>Clase 21 Feb | Ejemplo2</title>
 
 
     <!-- Bootstrap CSS -->
@@ -13,21 +13,38 @@
     <link rel="stylesheet" href="../INSTALACIÓN/css/bootstrap.min.css">
 </head>
 
-<body>
+<body> 
+    <!-- bg-primary es para el fondo azúl y el py agrega un padding en este caso de 5 -->
     <div class="container">
-        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Optio consequatur sint, corrupti,
-            in accusantium cupiditate quos temporibus, quidem officia praesentium est? Sed illum voluptatibus, ullam
-            fugit error sunt, natus vel sint consequatur delectus architecto quam repudiandae ipsum aliquam cum, ab
-            neque enim quia iure. Fugit repellendus voluptatibus et. Pariatur, ullam.</p>
+        <div class="row">
+            <div class="col-4 bg-primary text-white text-center">
+                <p>col-4</p>
+            </div>
+            <div class="col-4 bg-success text-white text-center">
+                <p>col-4</p>
+            </div>
+            <div class="col-4 bg-dark text-white text-center">
+                <p>col-4</p>
+            </div>
+        </div>
     </div>
-    <!-- El container-fluid no agrega margenes -->
-    <div class="container-fluid">
-        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ex ea debitis veniam error hic quibusdam corporis
-            quod placeat harum ut voluptas natus eligendi distinctio nam voluptatem voluptatum eos, temporibus saepe,
-            voluptate recusandae doloribus? Eum, perferendis. Cupiditate id nisi vitae, quidem quas reprehenderit,
-            officiis minima, fugit saepe quam rerum accusamus libero.</p>
+    <br>
+    <div class="container">
+        <div class="row">
+            <div class="col-3 bg-danger text-white text-center">
+                <p>col-3</p>
+            </div>
+            <div class="col-3 bg-dark text-white text-center">
+                <p>col-3</p>
+            </div>
+            <div class="col-3 bg-primary text-white text-center">
+                <p>col-3</p>
+            </div>
+            <div class="col-3 bg-success text-white text-center">
+                <p>col-3</p>
+            </div>
+        </div>
     </div>
-
     <!-- Optional JavaScript -->
     <!-- jQuery first, then Popper.js, then Bootstrap JS -->
     <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js"
