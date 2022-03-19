@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ejercicio 3 | Valores</title>
+</head>
+<script type="text/javascript">
+    //añadir elementos
+    //Agregar un elemento
+    function añade() {
+        //Accedemos al id de la lista
+        let lista = document.getElementById("lista");
+        let elemento = document.createElement("li");
+        let elementoTexto = document.createTextNode("Honestidad");
+        elemento.appendChild(elementoTexto);
+
+        lista.appendChild(elemento);
+        let nuevoElemento = "<li>Amistad</li>";
+        lista.innerHTML = lista.innerHTML + nuevoElemento;
+    }
+    function elimine() {
+        let list = document.getElementsByTagName("li");
+        lista.removeChild(list.item(0)); 
+    }
+</script>
+<body>
+    <ul id="lista">
+        <li>Justicia</li>
+        <li>Orden</li>
+        <li>Paz</li>
+        <li>Amor</li>
+        <li>Verdad</li>
+    </ul>
+
+    <input type="button" value="Agregar Elemento" onclick="añade();">
+    <input type="button" value="Eliminar Elemento" onclick="elimine();">
+
+</body>
+
+</html>

@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="widtd=device-widtd, initial-scale=1.0">
+    <title>Ejercicio Agregar y Eliminar Nodos</title>
+
+
+    <style>
+        body {
+            background: #158b6e;
+            color: #fff;
+        }
+    </style>
+    <script type="text/javascript">
+        //Funcion eliminar Nodos
+        function eliminarNode(tempNode) {//Metodo tempNode para eliminar el contenido actual
+            let padreNode = tempNode.parentNode; //Obtenemos el nodo padre osea el principal para luego eliminar el hijo
+            padreNode.removeChild(tempNode);//Removemos el nodo hijo que se guardo en tempNode
+        }
+        //Funcion para eliminar el espacio que es dejado una vez que se elimina el nodo
+        function trim(str) {
+            let reg = /^\s*|\s*$/g;
+            return str.replace(reg, "");
+        }
+        //Eliminar elementos de la tabla
+        function eliminarElementosTabla() {
+            let aNodes = document.getElementById("listaElementos").getElementsByTagName("a");
+            for (let i = 0; i < aNodes.length; i++) {
+                aNodes[i].onclick = function () {
+                    let trNode = this.parentNode.parentNode;
+                    let textContent = trNode.getElementsByTagName("td")[0].firstChild.nodeValue;//Vamos a acceder a los nombres que estan en los td
+                    textContent = trim(textContent); //Con trim eliminamos el elemento
+
+                    let flag = confirm("¿Estás segiro de que quieres eliminar: " + textContent + " información?");//Mensaje de confirmacion para que el usuario confirme la eliminacion
+                    if (flag) {
+                        eliminarNode(trNode);
+                    }
+                    return false
+                }
+            }
+        }
+        //Funcion para añadir o agregar contenido
+        function agregarContenido() {
+            let subNode = document.getElementById("botonAgregarEmpleado")    //Declaramos una variable para poder acceder al id del boton para agregar empleados
+            //A este punto ya accedimos al boton botonAgregarEmpleado
+            subNode.onclick = function () {//Creamos la funcion al hacer click
+                let nombreVal = document.getElementById("nombre").value;//Accedemos al nombre
+                let emailVal = document.getElementById("email").value;//Accedemos al email
+                let salarioVal = document.getElementById("salario").value;//Accedemos al salario
+
+                let nombreTd = document.createElement("td");
+                nombreTd.appendChild(document.createTextNode(nombreVal));
+
+                let emailTd = document.createElement("td");
+                emailTd.appendChild(document.createTextNode(emailVal));
+
+                let salarioTd = document.createElement("td");
+                salarioTd.appendChild(document.createTextNode(salarioVal));
+
+                let tr = document.createElement("tr");
+                tr.appendChild(nombreTd);
+                tr.appendChild(emailTd);
+                tr.appendChild(salarioTd);
+
+                let aNode = document.createElement("a");
+                aNode.href = "deleteEmpid=xxx";
+                aNode.appendChild(document.createTextNode("eliminar"));
+                let aTd = document.createElement("td");
+                aTd.appendChild(aNode);
+
+                tr.appendChild(aTd);
+
+                document.getElementById("listaElementos")
+                    .getElementsByTagName("tbody")[0].appendChild(tr);
+            }
+        }
+        window.onload = function () {
+            eliminarElementosTabla();
+            agregarContenido();
+        }
+    </script>
+</head>
+
+<body>
+    <center>
+        <br><br>Agregar Nuevo Empleado <br><br>Nombre:<input type="text" nombre="nombre" id="nombre" />
+        &nbsp;&nbsp;email:<input type="text" name="email" id="email" />
+        &nbsp;&nbsp;salario:<input type="text" name="salario" id="salario"><br><br>
+        <button id="botonAgregarEmpleado" border="1" cellpadding="5" cellspacing="">Agregar
+        </button>
+        <br> <hr>
+        <table id="listaElementos" border="1" cellpadding="5" cellspacing="">
+            <tbody>
+                <tr>
+                    <th>Nombre</th>
+                    <th>Email</th>
+                    <th>Salario</th>
+                    <th>&nbsp;</th>
+                </tr>
+                <tr>
+                    <td>Rosa Orellana</td>
+                    <td>rosa@tom.com</td>
+                    <td>3000</td>
+                    <td><a href="deleteEmpid=001">Eliminar</a></td>
+                </tr>
+                <tr>
+                    <td>Carlos Quezada</td>
+                    <td>carlos@sohu.com</td>
+                    <td>6000</td>
+                    <td><a href="deleteEmpid=002">Eliminar</a></td>
+                </tr>
+                <tr>
+                    <td>José Perez</td>
+                    <td>jose@jos.com</td>
+                    <td>1500</td>
+                    <td><a href="deleteEmpid=003">Eliminar</a></td>
+                </tr>
+                <tr>
+                    <td>Ana Cano</td>
+                    <td>ana@cas.com</td>
+                    <td>16800</td>
+                    <td><a href="deleteEmpid=004">Eliminar</a></td>
+                </tr>
+            </tbody>
+        </table>
+    </center>
+</body>
+
+</html>

@@ -22,20 +22,10 @@
 }
 
 .imgBordeExterior {
-    background: linear-gradient(to left, var(--verdeLima), var(--verdeVivo), var(--verdePrincipal));
-    border-radius: 100%;
     margin: 0px;
     padding: 0;
     color: #fff;
     text-align: center;
-}
-
-.imgBordeExterior2 {
-    background: linear-gradient(to left, var(--verdeLima), var(--verdeVivo), var(--verdePrincipal));
-    border-radius: 100%;
-    padding: 10px;
-    color: #fff;
-
 }
 
 .imgBordeExterior2:hover {
@@ -68,7 +58,7 @@ body {
 
 
 .copyright {
-    margin-top: 15px;
+    margin-top: 20px;
     text-align: center;
     font-size: 1rem;
     color: #fff;
