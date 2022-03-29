@@ -1,32 +1,117 @@
-<!-- Archivo bootstrap con el servidor de bootstrap -->
-<!doctype html>
-<html lang="en"> <!-- Cambiarle el idioma. -->
-  <head>
-    <!-- Required meta tags -->
-    <meta charset="utf-8"> <!-- Para que acepte palabras con tilde. -->
-    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no"> <!-- Viewport, para que nos detecte diferentes tamaños de los dispositivos. -->
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Barlow+Semi+Condensed:ital,wght@1,100&display=swap" rel="stylesheet">
 
-    <!-- Bootstrap CSS -->
-    <!-- Llama las hojas de estilo de bootstrap nada más que lo hace desde el servidor. -->
-    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Barlow+Semi+Condensed:ital,wght@0,300;0,400;0,900;1,100;1,600;1,700&display=swap"
+        rel="stylesheet">
 
-    <title>Hello, world!</title>
-  </head>
-  <body>
-    <div class="row container-fluid">
-        <div class="col-6 bg-success">Lorem ipsum dolor sit amet consectetur adipisicing elit. Rem corporis sint eos asperiores, quia deleniti aspernatur, et deserunt ipsam provident voluptatum harum dolor quo recusandae ab ex cum. Doloribus molestiae non aut esse, modi eius deleniti vero corrupti dolores eveniet. Soluta ea accusantium voluptates enim odit quis porro expedita officiis?</div>
-        <div class="col-3 bg-info">Lorem ipsum dolor sit amet consectetur adipisicing elit. Rem corporis sint eos asperiores, quia deleniti aspernatur, et deserunt ipsam provident voluptatum harum dolor quo recusandae ab ex cum. Doloribus molestiae non aut esse, modi eius deleniti vero corrupti dolores eveniet. Soluta ea accusantium voluptates enim odit quis porro expedita officiis?</div>
-        <div class="col-3 bg-secondary">Lorem ipsum dolor sit amet consectetur adipisicing elit. Rem corporis sint eos asperiores, quia deleniti aspernatur, et deserunt ipsam provident voluptatum harum dolor quo recusandae ab ex cum. Doloribus molestiae non aut esse, modi eius deleniti vero corrupti dolores eveniet. Soluta ea accusantium voluptates enim odit quis porro expedita officiis?</div>
-        <div class="col-3 bg-danger">Lorem ipsum dolor sit amet consectetur adipisicing elit. Rem corporis sint eos asperiores, quia deleniti aspernatur, et deserunt ipsam provident voluptatum harum dolor quo recusandae ab ex cum. Doloribus molestiae non aut esse, modi eius deleniti vero corrupti dolores eveniet. Soluta ea accusantium voluptates enim odit quis porro expedita officiis?</div>
-        <div class="col-6 bg-warning">Lorem ipsum dolor sit amet consectetur adipisicing elit. Rem corporis sint eos asperiores, quia deleniti aspernatur, et deserunt ipsam provident voluptatum harum dolor quo recusandae ab ex cum. Doloribus molestiae non aut esse, modi eius deleniti vero corrupti dolores eveniet. Soluta ea accusantium voluptates enim odit quis porro expedita officiis?</div>
+    <link rel="styLesheet" href="./css/reducido.css">
 
-    </div>
+</head>
+<body>
+    <main class="container d-flex align-items-center justify-content-center alto-100">
+        <div class="row">
+            <!--columna izquierda-->
+            <div class="col-12 col-lg-9" > 
+                <div class="row">
+                    <div class=" col-lg-8 p-2">
+                        <article class="card h-100 bg-primary text-white fondo-card shadow-sm">
+                            <div class="card-body">
+                                <div class="d-flex mb-3">
+                                    <img src="./images/image-daniel.jpg" alt="" class="border border-secondary border-3 rounded-circle">
+                                    <div class="ps-3">
+                                        <h6 class="m-0 h6">Daniel Cruz</h6>
+                                        <p class="m-0 h6">Lorem, ipsum.</p>
+                                    </div>
+                                </div>
+                                <div>
+                                    <p class="h6">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Fugiat exercitationem placeat possimus sequi ut quod ab, rem eligendi facere inventore. Nam voluptatem debitis optio possimus!</p>
+                                    <p class="fs-6 lh-1">Lorem ipsum dolor sit amet consectetur adipisicing elit. Esse provident ad, natus earum reprehenderit adipisci quae facere expedita laborum. Ad molestias ipsum enim exercitationem adipisci?</p>
+                                </div>
+                            </div>
+                        </article>
+                    </div>
+                    <div class=" col-lg-4 p-2">
+                        <article class="card h-100 bg-success shadow-sm text-white">
+                            <div class="card-body">
+                                <div class="d-flex mb-3">
+                                    <img src="./images/image-ana.jpg" alt="" class="border border-secondary border-3 rounded-circle">
+                                    <div class="ps-3">
+                                        <h6 class="m-0 h6">Ana Cruz</h6>
+                                        <p class="m-0 h6">Lorem, ipsum.</p>
+                                    </div>
+                                </div>
+                                <div>
+                                    <p class="fs-6 lh-1">Lorem ipsum dolor sit amet consectetur adipisicing elit. Esse provident ad, natus earum reprehenderit adipisci quae facere expedita laborum. Ad molestias ipsum enim exercitationem adipisci?</p>
+                                </div>
+                            </div>
+                        </article>
+                    </div>
+                    <div class=" col-lg-4 p-2">
+                        <article class="card h-100 bg-secondary shadow-sm">
+                            <div class="card-body">
+                                <div class="d-flex mb-3">
+                                    <img src="./images/image-pedro.jpg" alt="" class="border border-secondary border-3 rounded-circle">
+                                    <div class="ps-3">
+                                        <h6 class="m-0 h6">Pedro Sanchez</h6>
+                                        <p class="m-0 h6">Lorem, ipsum.</p>
+                                    </div>
+                                </div>
+                                <div>
+                                    <p class="fs-6 lh-1">Lorem ipsum dolor sit amet consectetur adipisicing elit. Esse provident ad, natus earum reprehenderit adipisci quae facere expedita laborum. Ad molestias ipsum enim exercitationem adipisci?</p>
+                                </div>
+                            </div>
+                        </article>
+                    </div>
+                    <div class=" col-lg-8 p-2">
+                        <article class="card h-100 bg-dark shadow-sm text-white">
+                            <div class="card-body">
+                                <div class="d-flex mb-3">
+                                    <img src="./images/image-karla.jpg" alt="" class="border border-secondary border-3 rounded-circle">
+                                    <div class="ps-3">
+                                        <h6 class="m-0 h6">Karla Martinez</h6>
+                                        <p class="m-0 h6">Lorem, ipsum.</p>
+                                    </div>
+                                </div>
+                                <div>
+                                    <p class="h6">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Fugiat exercitationem placeat possimus sequi ut quod ab, rem eligendi facere inventore. Nam voluptatem debitis optio possimus!</p>
+                                    <p class="fs-6 lh-1">Lorem ipsum dolor sit amet consectetur adipisicing elit. Esse provident ad, natus earum reprehenderit adipisci quae facere expedita laborum. Ad molestias ipsum enim exercitationem adipisci?</p>
+                                </div>
+                            </div>
+                        </article>
+                    </div>
+                </div>
+            </div>
 
-    <!-- Optional JavaScript -->
-    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
-    <!-- Archivos JS que por defecto viene el media query. Necesarios para ejecutar as páginas en Bootstrap. -->
-    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
-    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
-  </body>
+            <!--columna derecha-->
+            <div class="col-12 col-lg-3 p-2" > 
+                <article class="card h-100 bg-secondary shadow-sm">
+                    <div class="card-body">
+                        <div class="d-flex mb-3">
+                            <img src="./images/image-Israel.jpg" alt="" class="border border-secondary border-3 rounded-circle">
+                            <div class="ps-3">
+                                <h6 class="m-0 h6">Israel Puerto</h6>
+                                <p class="m-0 h6">Lorem, ipsum.</p>
+                            </div>
+                        </div>
+                        <div>
+                            <p class="h6">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Fugiat exercitationem placeat possimus sequi ut quod ab, rem eligendi facere inventore. Nam voluptatem debitis optio possimus!</p>
+                            <p class="fs-6 lh-1">Lorem ipsum dolor sit amet consectetur adipisicing elit. Esse provident ad, natus earum reprehenderit adipisci quae facere expedita laborum. Ad molestias ipsum enim exercitationem adipisci?</p>
+                        </div>
+                    </div>
+                </article>
+            </div>
+        </div>
+    </main>
+</body>
 </html>
